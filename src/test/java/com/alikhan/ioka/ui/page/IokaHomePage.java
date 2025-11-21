@@ -18,8 +18,6 @@ public class IokaHomePage extends BasePage{
 
     @Override
     public IokaHomePage waitForLoaded() {
-//        page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Продукты")).waitFor();
-
         page.getByRole(AriaRole.BUTTON,
                 new Page.GetByRoleOptions().setName("Подключиться")).waitFor();
         return this;

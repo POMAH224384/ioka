@@ -3,6 +3,7 @@ package com.alikhan.ioka.ui.page;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import io.qameta.allure.Step;
 
 import static com.alikhan.ioka.config.TestConfig.testConfig;
 
@@ -35,7 +36,6 @@ public class IokaForAllPage extends BasePage{
                 new Page.GetByRoleOptions().setName("Подключиться"));
     }
 
-    // форма "Подключиться" — селекторы подгонишь по факту
 
     private Locator nameInput() {
         return page.locator("input[name='name']").first();
@@ -51,7 +51,6 @@ public class IokaForAllPage extends BasePage{
     }
 
     private Locator validationError() {
-        // общий локатор ошибки — поправишь под реальный текст
         return page.getByText("Обязательное поле").first();
     }
 

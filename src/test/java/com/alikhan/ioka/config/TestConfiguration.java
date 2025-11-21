@@ -19,5 +19,5 @@ public interface TestConfiguration extends Config{
     String apiKey();
 
     @Key("api.timeoutMillis")
-    String apiTimeoutMillis();
+    Long apiTimeoutMillis();
 }

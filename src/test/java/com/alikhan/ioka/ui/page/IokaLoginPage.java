@@ -38,6 +38,6 @@ public class IokaLoginPage extends BasePage{
     }
 
     public boolean isErrorVisible() {
-        return page.getByText("Неверный").first().isVisible();
+        return page.getByText("Не авторизован.").isVisible();
     }
 }
